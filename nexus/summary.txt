@@ -1,0 +1,1 @@
+Land Perfect Blocks: a timing bar under the crosshair shows when an enemy's hit lands, with the game's Perfect Block window in green. Or switch to a mode where every block is perfect. In-game menu (F6). Pure UE4SS Lua mod, no files replaced.

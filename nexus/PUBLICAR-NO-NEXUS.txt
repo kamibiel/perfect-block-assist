@@ -1,0 +1,21 @@
+PUBLICAR "Perfect Block Assist" 1.0.0 NO NEXUS (Grounded 2)
+==========================================================
+1) Nexus > Grounded 2 > Upload a mod
+   - Mod name: Perfect Block Assist
+   - Version: 1.0.0
+   - Category: Gameplay (ou Miscellaneous)
+   - Brief overview (max. 350 caracteres): cole o conteudo de summary.txt
+   - Detailed description: cole o conteudo de description.bbcode
+   - Requirements: UE4SS for Grounded 2 (mod 259)
+   - Tags sugeridas: Gameplay, Combat, User Interface, Quality of Life, Utilities for Players
+   - Marque que o mod tem conteudo gerado por IA (o codigo e a imagem de capa foram feitos com IA).
+2) Images: envie cover.png como imagem principal
+3) Files: envie PerfectBlockAssist-1.0.0.zip
+   - File name: Perfect Block Assist
+   - Version: 1.0.0 | Category: Main Files
+   - Description: Extract the PerfectBlockAssist folder into ...\Win64\ue4ss\Mods\. Requires UE4SS for Grounded 2.
+4) Permissions: siga o padrao dos seus outros mods (codigo MIT no GitHub).
+5) Publique.
+
+Conferencia (sha256 do zip):
+e18173aa847599af13710f353e2bd050b335861086e6c8e0b655100b652918d2
