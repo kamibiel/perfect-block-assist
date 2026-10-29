@@ -1,0 +1,140 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face{font-family:"Lucky";src:url(fonts/luckiest-guy-latin-400-normal.woff2) format("woff2")}
+  @font-face{font-family:"Nun";font-weight:900;src:url(fonts/nunito-latin-900-normal.woff2) format("woff2")}
+  html,body{margin:0;background:#000}
+  .wrap{width:1920px;height:1080px;position:relative;overflow:hidden}
+  svg{position:absolute;inset:0}
+  .title{position:absolute;left:96px;top:92px;transform:rotate(-3deg);transform-origin:left top}
+  .t1{font-family:"Lucky";font-size:176px;line-height:.88;letter-spacing:2px;color:#ffe066;
+      -webkit-text-stroke:14px #3b2412;paint-order:stroke fill;
+      text-shadow:0 12px 0 #3b2412,0 26px 40px rgba(0,0,0,.35)}
+  .t1 .b{color:#b7f05a}
+  .t1 .c{font-size:120px;color:#fff}
+  .sub{margin:30px 0 0 8px;font-family:"Nun";font-weight:900;font-size:42px;color:#fff;
+       -webkit-text-stroke:9px #3b2412;paint-order:stroke fill;text-shadow:0 6px 0 #3b2412}
+  .chips{position:absolute;left:104px;bottom:86px;display:flex;gap:16px}
+  .chip{font-family:"Nun";font-weight:900;font-size:30px;color:#3b2412;background:#ffe066;
+        border:6px solid #3b2412;border-radius:18px;padding:8px 22px;box-shadow:0 7px 0 #3b2412}
+  .chip.g{background:#b7f05a}
+  .tag{position:absolute;right:70px;top:70px;font-family:"Nun";font-weight:900;font-size:28px;color:#fff;
+       background:#3b2412;border-radius:14px;padding:10px 20px;letter-spacing:2px}
+  .bartext{position:absolute;left:350px;top:600px;font-family:"Lucky";font-size:64px;color:#7dff8a;
+       -webkit-text-stroke:10px #13301a;paint-order:stroke fill;text-shadow:0 7px 0 #13301a;transform:rotate(-3deg)}
+</style></head>
+<body><div class="wrap">
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#7fd3f2"/><stop offset=".6" stop-color="#bfeaf0"/><stop offset="1" stop-color="#f4e7b5"/>
+  </linearGradient>
+  <radialGradient id="sun" cx="1500" cy="420" r="620" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#fffbe0"/><stop offset=".3" stop-color="#fff4b8" stop-opacity=".75"/><stop offset="1" stop-color="#fff4b8" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="gFar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8cc864"/><stop offset=".5" stop-color="#a9dc78"/><stop offset="1" stop-color="#78b552"/></linearGradient>
+  <linearGradient id="gMid" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4f9a3a"/><stop offset=".45" stop-color="#7cc451"/><stop offset="1" stop-color="#3e8430"/></linearGradient>
+  <linearGradient id="gNear" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2f6e26"/><stop offset=".5" stop-color="#4f9a37"/><stop offset="1" stop-color="#245a1f"/></linearGradient>
+  <linearGradient id="dirt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8a5a34"/><stop offset="1" stop-color="#5b3820"/></linearGradient>
+  <radialGradient id="shell" cx=".38" cy=".32" r=".85"><stop offset="0" stop-color="#e9b26a"/><stop offset=".6" stop-color="#b9783a"/><stop offset="1" stop-color="#7e4c22"/></radialGradient>
+  <radialGradient id="rim" cx=".5" cy=".5" r=".5"><stop offset=".82" stop-color="#7e4c22"/><stop offset="1" stop-color="#4e2c12"/></radialGradient>
+  <radialGradient id="spiderBody" cx=".35" cy=".3" r=".9"><stop offset="0" stop-color="#6b5446"/><stop offset=".6" stop-color="#3a2b22"/><stop offset="1" stop-color="#1f1612"/></radialGradient>
+  <radialGradient id="flash" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#fff6b0"/><stop offset="1" stop-color="#ffe066" stop-opacity="0"/></radialGradient>
+  <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="10" flood-color="#2a1a0c" flood-opacity=".35"/></filter>
+</defs>
+
+<rect width="1920" height="1080" fill="url(#sky)"/>
+<rect width="1920" height="1080" fill="url(#sun)"/>
+
+<!-- far grass (blurred) -->
+<g filter="url(#blur6)" opacity=".85">
+  <path d="M760 1080 C780 700 820 380 890 60 C860 380 850 720 860 1080Z" fill="url(#gFar)"/>
+  <path d="M1100 1080 C1110 760 1150 470 1220 180 C1190 470 1180 760 1190 1080Z" fill="url(#gFar)"/>
+  <path d="M1840 1080 C1850 780 1880 520 1920 300 L1920 1080Z" fill="url(#gFar)"/>
+  <path d="M600 1080 C580 820 540 560 470 300 C570 560 640 820 660 1080Z" fill="url(#gFar)"/>
+</g>
+
+<!-- mid grass -->
+<g>
+  <path d="M960 1080 C990 760 1050 500 1150 230 C1100 520 1070 790 1060 1080Z" fill="url(#gMid)"/>
+  <path d="M1700 1080 C1730 840 1800 640 1910 470 L1920 520 C1840 680 1790 870 1780 1080Z" fill="url(#gMid)"/>
+</g>
+
+<!-- ground -->
+<path d="M0 870 C320 840 640 890 980 860 C1300 832 1620 870 1920 848 L1920 1080 L0 1080Z" fill="url(#dirt)"/>
+<path d="M0 915 C400 895 800 940 1200 910 C1500 890 1750 915 1920 900 L1920 1080 L0 1080Z" fill="#4c2e19" opacity=".6"/>
+<g fill="#a8784c" stroke="#3b2412" stroke-width="4">
+  <ellipse cx="640" cy="950" rx="38" ry="20"/><ellipse cx="1180" cy="1010" rx="26" ry="14"/><ellipse cx="310" cy="1015" rx="30" ry="15"/>
+</g>
+
+<!-- SPIDER lunging from the right (original stylised design) -->
+<g transform="translate(1520 560)" filter="url(#shadow)">
+  <g stroke="#1f1612" stroke-width="22" stroke-linecap="round" fill="none">
+    <path d="M60 40 C160 -60 260 -40 330 60"/>
+    <path d="M80 70 C190 20 300 60 380 190"/>
+    <path d="M70 110 C170 120 260 200 300 330"/>
+    <path d="M30 120 C80 200 120 290 110 400"/>
+  </g>
+  <g stroke="#5a463a" stroke-width="8" stroke-linecap="round" fill="none" opacity=".7">
+    <path d="M60 40 C160 -60 260 -40 330 60"/><path d="M80 70 C190 20 300 60 380 190"/>
+  </g>
+  <ellipse cx="190" cy="40" rx="200" ry="150" fill="url(#spiderBody)" stroke="#120c09" stroke-width="10"/>
+  <ellipse cx="0" cy="60" rx="120" ry="100" fill="url(#spiderBody)" stroke="#120c09" stroke-width="10"/>
+  <g fill="#ff4b3e" stroke="#120c09" stroke-width="5">
+    <circle cx="-62" cy="30" r="20"/><circle cx="-20" cy="16" r="16"/><circle cx="-80" cy="70" r="11"/><circle cx="-40" cy="58" r="10"/>
+  </g>
+  <g fill="#fff"><circle cx="-68" cy="23" r="6"/><circle cx="-25" cy="10" r="5"/></g>
+  <!-- fangs -->
+  <path d="M-90 110 C-120 140 -130 170 -120 200 C-100 175 -85 150 -70 130Z" fill="#f2e6cf" stroke="#120c09" stroke-width="6"/>
+  <path d="M-40 128 C-60 160 -62 190 -50 214 C-34 188 -24 164 -18 140Z" fill="#f2e6cf" stroke="#120c09" stroke-width="6"/>
+  <g stroke="#1f1612" stroke-width="20" stroke-linecap="round" fill="none">
+    <path d="M-60 130 C-130 190 -170 260 -180 330"/>
+  </g>
+</g>
+
+<!-- impact flash between shield and fang -->
+<circle cx="1330" cy="650" r="210" fill="url(#flash)" opacity=".95"/>
+<g fill="#ffe066" stroke="#3b2412" stroke-width="7" stroke-linejoin="round">
+  <path d="M1330 470 L1355 590 L1460 520 L1385 625 L1520 650 L1385 680 L1450 790 L1350 715 L1330 840 L1305 715 L1205 790 L1272 680 L1140 650 L1275 622 L1210 520 L1305 590 Z"/>
+</g>
+
+<!-- SHIELD (nutshell, held up) -->
+<g transform="translate(1180 660) rotate(-12)" filter="url(#shadow)">
+  <ellipse cx="0" cy="0" rx="190" ry="220" fill="url(#rim)" stroke="#3b2412" stroke-width="10"/>
+  <ellipse cx="0" cy="0" rx="160" ry="190" fill="url(#shell)" stroke="#3b2412" stroke-width="7"/>
+  <g stroke="#7e4c22" stroke-width="9" fill="none" stroke-linecap="round" opacity=".75">
+    <path d="M-110 -110 C-60 -150 60 -150 110 -110"/><path d="M-130 -20 C-70 -60 70 -60 130 -20"/><path d="M-120 80 C-60 40 60 40 120 80"/>
+  </g>
+  <circle cx="0" cy="0" r="46" fill="#d9a466" stroke="#3b2412" stroke-width="8"/>
+  <circle cx="-14" cy="-14" r="12" fill="#fbe2b4"/>
+  <ellipse cx="-80" cy="-120" rx="40" ry="16" fill="#fff4d6" opacity=".55" transform="rotate(-30 -80 -120)"/>
+</g>
+
+<!-- TIMING BAR motif -->
+<g transform="translate(110 700) rotate(-3)">
+  <rect x="0" y="0" width="760" height="56" rx="18" fill="#13301a" opacity=".92" stroke="#0a1a0e" stroke-width="6"/>
+  <rect x="18" y="18" width="724" height="20" rx="8" fill="#2a4a32"/>
+  <rect x="560" y="18" width="182" height="20" rx="6" fill="#59e36a"/>
+  <rect x="738" y="-10" width="12" height="76" rx="5" fill="#ff4b3e" stroke="#3b0e0a" stroke-width="4"/>
+  <rect x="626" y="-16" width="18" height="88" rx="7" fill="#ffffff" stroke="#3b2412" stroke-width="5"/>
+</g>
+
+<!-- near foreground grass framing -->
+<g>
+  <path d="M-60 1080 C-10 760 60 520 170 280 C130 560 120 820 130 1080Z" fill="url(#gNear)"/>
+  <path d="M1880 1080 C1860 840 1820 660 1750 540 C1850 660 1920 840 1960 1080Z" fill="url(#gNear)"/>
+  <path d="M40 760 C70 620 110 480 170 280" stroke="#7dc155" stroke-width="7" fill="none" opacity=".6"/>
+</g>
+
+<g fill="#fffbe0"><circle cx="1080" cy="260" r="5" opacity=".8"/><circle cx="1690" cy="300" r="4" opacity=".7"/><circle cx="940" cy="420" r="3" opacity=".8"/></g>
+</svg>
+
+<div class="title">
+  <div class="t1">PERFECT<br><span class="b">BLOCK</span> <span class="c">ASSIST</span></div>
+  <div class="sub">Know when to block, or make every block perfect.</div>
+</div>
+<div class="bartext">BLOCK!</div>
+<div class="chips"><span class="chip g">Timing bar</span><span class="chip">Every block perfect</span><span class="chip">F6 menu</span></div>
+<div class="tag">GROUNDED 2 · UE4SS MOD</div>
+</div></body></html>
